@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    padding-top: 25%;
+}
+
+
+
+main {
+    background-color:  hsl(217, 19%, 24%);
+    border-radius: 12px;
+    height: 350px;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    text-align: center;
+    padding: 10% 10px 0 10px;
+}
+
+h1 {
+    font-size: 1em;
+    color: hsl(150, 100%, 66%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 0;
+    display: inline-block;
+}
+
+p{
+    padding-top: 30px;
+    font-size: 1.2em;
+    font-family: 'Manrope', sans-serif;
+    display: inline;
+}
+
+
+#desktop-divider {
+    display: none;
+}
+
+#mobile-divider {
+    width: 90%;
+    position: absolute;
+    bottom: 15%;
+    left:4%;
+}
+
+#dice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: 40%;
+    border: none;
+}
+
+#dice:hover, #dice:active {
+    outline: 10px solid hsla(150, 100%, 66%,0.2);
+}
+
+#dice img {
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        padding-top: 12%;
+    }
+
+    main {
+        height: 350px;
+        margin: auto;
+        width: 40%;
+        position: relative;
+        text-align: center;
+        padding:2% 15px 0 15px;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+
+    #mobile-divider {
+        display: none;
+    }
+
+    #desktop-divider{
+        display: block;
+        margin: 20% auto;
+        width: 90%;
+    }
+
+    #dice {
+        left: 46%;
+    }
+
+
+
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 80%;}
+.attribution a { color: hsl(228, 45%, 44%); }
